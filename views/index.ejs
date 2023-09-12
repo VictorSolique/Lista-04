@@ -3,8 +3,78 @@
 <head>
   <title>Projeto Express e EJS</title>
   <link rel="stylesheet" type="text/css" href="/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
 </head>
 <body>
-  <h1><%= message %></h1>
+  <div class="container">
+    <ul class="nav justify-content-center nav-underline">
+      <li class="nav-item">
+        <span class="nav-link text-danger my-3 fs-2"><%= message %></span>
+    </ul>
+  </div>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <div class="card mb-3">
+          <img src="https://media.cotabest.com.br/media/sku/lencos-umedecidos-descartaveis-regular-sache-48-unidades-pampers-un-acb99e7954.jpg" class="card-img-top tamanho" >
+          <div class="card-body">
+            <h5 class="card-title">Lenços Umedecidos Cheirinho de Bebê sachê 48 unidades - Pampers</h5>
+            <p class="card-text">10,90 /un</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-3">
+          <img src="https://media.cotabest.com.br/media/sku/sabao-em-barra-glicerinado-neutro-pacote-900g-ype-pct-630ef0bb6a.jpg" class="card-img-top tamanho">
+          <div class="card-body">
+            <h5 class="card-title">Sabão em Barra Glicerinado Neutro pacote 900g - Ypê</h5>
+            <p class="card-text">9,99 /PCT</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-3">
+          <img src="https://media.cotabest.com.br/media/sku/la-de-aco-pacote-45g-assolan-pct-3f80087e11.jpg" class="card-img-top tamanho">
+          <div class="card-body">
+            <h5 class="card-title">Lã de Aço pacote 45g - Assolan</h5>
+            <p class="card-text">1,99 /PCT</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="card mb-3">
+          <img src="https://media.cotabest.com.br/media/sku/detergente-liquido-neutro-frasco-500ml-ype-fr-6be404eca8.jpg" class="card-img-top tamanho">
+          <div class="card-body">
+            <h5 class="card-title">Detergente Líquido Neutro Frasco 500ml - Ypê</h5>
+            <p class="card-text">1,89 /FR</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-3">
+          <img src="https://media.cotabest.com.br/media/sku/farinha-de-trigo-pacote-1kg-dona-benta-pct-e27b17101a.jpg" class="card-img-top tamanho">
+          <div class="card-body">
+            <h5 class="card-title">Farinha de Trigo Tradicional Tipo 1 Pacote 1kg - Dona Benta</h5>
+            <p class="card-text">4,92 /PCT</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-3">
+          <img src="https://media.cotabest.com.br/media/sku/leite-condensado-semidesnatado-tetra-pak-395g-italac-un-edd44ebee9.jpg" class="card-img-top tamanho">
+          <div class="card-body">
+            <h5 class="card-title">Leite Condensado Semidesnatado Tetra Pak 395g - Italac</h5>
+            <p class="card-text">4,99 /UN</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
