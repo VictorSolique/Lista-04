@@ -6,7 +6,7 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-  res.render('index', { message: 'Super Mercado Atacadinho - As melhores ofertas!' });
+  res.render('index', { message: 'CARRO POPULAR' });
 });
 
 app.get('/produtos', (req, res) => {
