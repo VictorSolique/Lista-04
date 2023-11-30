@@ -18,12 +18,17 @@ const produtos = [
   {id: 10, nome: "Aston Martin Vanquish", preco: "1.400,000,00", desc: "Um supercarro de alto desempenho, com um design elegante e um motor potente que proporciona uma experiência de condução emocionante.", img: "carro10.webp"}
 ]
 
+function buscarProdutosID(id) {
+  const produto = produtos.find(a => a.id == id);
+  return produto || null
+}
+
 app.get('/', (req, res) => {
-  res.render('index', { message: 'CARROS DE LUXO' });
+  res.render('index', { produtos });
 });
 
 app.get('/produtos', (req, res) => {
-  res.render('produto', { message: 'Farinha de Trigo Tipo 1 Pacote 1kg - Coamo' });
+  res.render('produto', { message: 'Compre aqui' });
 });
 
 app.listen(port, () => {
