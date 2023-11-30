@@ -33,19 +33,20 @@
         <div class="container rounded card bg-body-tertiary border-0 mb-3">
             <div class="row">
                 <div class="col-8">
-                    <img src="img/carroCompra.webp" class="img-fluid" alt="...">
+                    <img src="/img/<%= produto.img %>" class="img-fluid" alt="...">
                     <p class="card-text"><small class="text-body-secondary">Imagem meramente ilustrativa</small></p>
                 </div>
                 <div class="col">
                     <div class="card-body">
-                        <h2 class="card-title border-bottom">Mercedez Bens CLA 250</h2>
-                        <p class="m-1 fs-3 text-danger">R$ 350.000,00</p>
-                        <p class="m-1">Um sedã de luxo compacto que combina estilo, desempenho e tecnologia de ponta. Seu design elegante e aerodinâmico atrai olhares por onde passa, enquanto o interior sofisticado oferece conforto e materiais de alta qualidade. Equipado com um motor turbo de 2.0 litros, o CLA 250 entrega um desempenho ágil e responsivo.</p>
+                        <h2 class="card-title border-bottom"><%= produto.nome %></h2>
+                        <p class="m-1 fs-3 text-danger">R$ <%= produto.preco %></p>
+                        <p class="m-1"><%= produto.desc %></p>
                         <button class="btn btn-success mt-3 text-center">Finalizar Compra</button>
                     </div>
                 </div>
                 <a href="/" class="text-end link-danger p-2 pe-3">voltar aos produtos</a>
                 
+              
             </div>
         </div> 
         <footer class="text-center align-middle mt-3 bg-dark text-light py-2">

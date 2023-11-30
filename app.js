@@ -27,8 +27,9 @@ app.get('/', (req, res) => {
   res.render('index', { produtos });
 });
 
-app.get('/produtos', (req, res) => {
-  res.render('produto', { message: 'Compre aqui' });
+app.get('/produtos/:id', (req, res) => {
+  const produto = buscarProdutosID(req.params.id)
+  res.render('produto', { produto });
 });
 
 app.listen(port, () => {
